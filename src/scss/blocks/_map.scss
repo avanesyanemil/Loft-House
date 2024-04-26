@@ -1,0 +1,34 @@
+.map{
+    padding: 180px 0;
+    position: relative;
+
+    @media screen and (max-width:$tablet) {
+        padding: 90px 0;
+    }
+
+    &::after{
+        content: "V";
+        position: absolute;
+        right: calc(50% + 555px);
+        top: 0;
+        transform: translateX(134px);
+        font-family: $font-accent;
+        font-size: 400px;
+        font-weight: 700;
+        line-height: 1.9;
+        opacity: 0.02;
+    }
+}
+
+.map__title{
+    margin-bottom: 88px;
+
+    @media screen and (max-width:$tablet) {
+        margin-bottom: 44px;
+    }
+}
+
+.map__container{
+    max-width: 1110px;
+    height: 358px;
+}

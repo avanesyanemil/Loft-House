@@ -1,0 +1,32 @@
+.cta{
+    padding: 180px 0;
+    background: url(./../img/cta/cta-bg.jpg);
+    
+    @media screen and (max-width:$tablet) {
+        padding: 60px 0;
+    }
+}
+
+.cta__title{
+    margin-bottom: 17px;
+}
+
+.cta__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @media screen and (max-width:$tablet) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cta__text{
+    max-width: 540px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media screen and (max-width:$tablet) {
+        font-size: 14px;
+    }
+}

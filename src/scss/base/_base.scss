@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap');
+
+
+
+body{
+    font-family: $font-main;
+    font-weight: 300;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+}
+
+a{
+    color: $white;
+    transition: color 0.2s ease-in;
+
+    &:hover{
+        color: $accent;
+    }
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title-2{
+    color:$accent;
+    font-family: $font-accent;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+
+    @media screen and (max-width:$tablet) {
+        font-size: 28px;
+    }
+}
+
+.visually-hidden{
+    /* contain text within 1px box*/
+
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    /*keep the layout*/
+    position: absolute;
+
+    /*remove any visible trace (e.g. background color) */
+    clip:rect(1px 1px 1px 1px);/*IE6 IE7*/
+    clip:rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); /*browsers in the future*/
+
+    /*prevent the screen reader to skip spaces between words*/
+    white-space:nowrap;
+}
+
+.none{
+    display: none !important;
+}
+
+.link-bold{ 
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}

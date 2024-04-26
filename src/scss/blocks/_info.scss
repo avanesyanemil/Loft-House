@@ -1,0 +1,38 @@
+.info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    position: relative;
+    padding-left: 35px;
+
+    &--map::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background: url(./../img/header/map.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    &--tel::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background-repeat: no-repeat;
+        background: url(./../img/header/phone.svg);
+    }
+
+    @media screen and (max-width:$tablet) {
+        font-size: 14px;
+        padding-left: 28px;
+    }
+}
